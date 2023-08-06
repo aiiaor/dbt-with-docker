@@ -52,7 +52,14 @@ You can also connect to the PostgreSQL database running inside the Docker contai
 ```
 psql -h localhost -p 5432 -U postgres -d postgres
 ```
+### Dataset Source
+This project utilizes a retail dataset available for download from Kaggle. The dataset is used to simulate real-world retail scenarios and allows for various analyses and transformations within the dbt environment.
 
+You can download the dataset from the following link:
+
+[Download Retail Dataset from Kaggle](https://www.kaggle.com/datasets/manjeetsingh/retaildataset?resource=download)
+
+Please ensure that you comply with Kaggle's terms and conditions when using this dataset. Follow the instructions provided within the project for integrating the downloaded dataset into your dbt development environment.
 ### Contributions & Support:
 
 Feel free to fork, star, or contribute to this project! If you have any issues or need further assistance, open an issue or contact the maintainers.
