@@ -12,9 +12,46 @@ Inspired by the classic Jaffle Shop dbt project, this repository encapsulates th
 * 🛠️ **Customizable Setup:** Easily adapt the codebase to fit your specific use case or data model.
 * 📈 **Quick Start Templates:** Inspired by the Jaffle Shop project, providing a jump-start for your dbt learning curve.
 
-### Getting Started:
+### Prerequisites:
 
-Clone this repository and follow the setup instructions in the README to launch your local dbt development environment, fully contained within Docker.
+* Docker installed on your machine (Download Docker)
+* Git installed for cloning the repository
+  
+### Getting Started
+* Step 1: Clone the Repository
+Clone this repository to your local machine:
+
+```
+git clone https://github.com/your-username/dbt-with-docker.git
+cd dbt-with-docker
+```
+
+* Step 2: Build and Run the Docker Containers
+Use Docker Compose to build and start the dbt and PostgreSQL containers:
+
+```
+docker-compose up --build
+```
+
+* Step 3: Access dbt Development Environment
+Once the containers are up and running, you can access the dbt development environment within Docker:
+
+```
+docker exec -it dbt bash
+```
+
+Now you can run dbt commands within the Docker container:
+
+```
+dbt run
+```
+
+* Step 4: Connecting to PostgreSQL (Optional)
+You can also connect to the PostgreSQL database running inside the Docker container using:
+
+```
+psql -h localhost -p 5432 -U postgres -d postgres
+```
 
 ### Contributions & Support:
 
